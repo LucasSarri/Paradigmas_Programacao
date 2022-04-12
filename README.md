@@ -6,8 +6,11 @@
 ## Métodos
 1. Estrutura:
     > public tipo_retorno nome_metodo (parametros...) {
+    >
     >   //Código
+    >
     >   return retorno;
+    >
     > }
 2. Parâmetros: métodos de uma determinada classe podem necessitar de elementos de outra classe ou valores externos para executar suas funções, portanto esse método recebe como parâmetro os valores que necessitar.
 3. Retorno: o retono se trata de um valor resultante do processamento de todo o código do método, todo método deve apresentar um valor de retorno (int, double, void e etc), exceto o método constructor.
