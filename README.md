@@ -15,6 +15,9 @@
 2. Parâmetros: métodos de uma determinada classe podem necessitar de elementos de outra classe ou valores externos para executar suas funções, portanto esse método recebe como parâmetro os valores que necessitar.
 3. Retorno: o retono se trata de um valor resultante do processamento de todo o código do método, todo método deve apresentar um valor de retorno (int, double, void e etc), exceto o método constructor.
 ---
-## Escopo
-O escopo de um elemento em Java determina a parte do código que é possível utilizar tal elemento, o mesmo é determinado a partir da declaração do elemento.
-Em uma classe temos os atributos que podem ser vistos e utilizados por qualquer método da classe, podendo ser declarados em qualquer parte do código, já os valores passados como parâmetros estão apenas visíveis para o método em questão.
+## Serviços
+Para se solicitar um serviço deve-se importar a classe e chamar seus métodos no código, sendo assim são passados valores como argumento durante a solicitação do serviço que devem ser na mesma quantidade, tipo e ordem dos parâmetros no método em si. Exemplo:
+>
+>   ponto.setXY(5.0,6.0)
+>
+Neste exemplo foi utilizado o método setXY da classe ponto, onde são passados 5 e 6 como argumentos, onde o 5 representa o x e o 6 o y por causa da ordem definida na declaração da classe.
