@@ -3,6 +3,20 @@
 2. java nome_programa \\ Executa a classe
 * OBS: todos arquivos referentes a um programa devem estar na mesma pasta, deve-se compilar todas as classes e executar somente a classe com método main
 ---
+## Expressões Lógicas
+Elas realizam a comparação entre valores e variáveis retornando um valor booleano (verdadeiro ou falso), para se criar uma operação lógica usamos os seguintes operadores:
+### Operadores relacionais
+* Maior >
+* Maior igual >=
+* Menor <
+* Menor igual <=
+* Igual ==
+* Diferente !=
+### Operadores Lógicos
+* E (and) &&: retorna verdadeiro caso os dois operandos forem verdadeiros
+* Ou (or) ||: retorna verdadeiro caso um dos operandos forem verdadeiros
+* Não (not) !: inverte o valor do operando
+---
 ## Métodos
 1. Estrutura:
     > public tipo_retorno nome_metodo (parametros...) {
@@ -17,7 +31,7 @@
 ---
 ## Serviços
 Para se solicitar um serviço deve-se importar a classe e chamar seus métodos no código, sendo assim são passados valores como argumento durante a solicitação do serviço que devem ser na mesma quantidade, tipo e ordem dos parâmetros no método em si. Exemplo:
->
->   ponto.setXY(5.0,6.0)
->
+    >
+    >   ponto.setXY(5.0,6.0)
+    >
 Neste exemplo foi utilizado o método setXY da classe ponto, onde são passados 5 e 6 como argumentos, onde o 5 representa o x e o 6 o y por causa da ordem definida na declaração da classe.
