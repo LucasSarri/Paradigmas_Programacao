@@ -3,6 +3,9 @@
 2. java nome_programa \\ Executa a classe
 * OBS: todos arquivos referentes a um programa devem estar na mesma pasta, deve-se compilar todas as classes e executar somente a classe com método main
 ---
+## Criação de Classes e Arquivos
+O nome do arquivo deve ser o mesmo da classe, considerando que os nomes devem iniciar com uma letra maiúscula e se tiver mais de uma palavra utilizar a notação CamelCase.
+---
 ## Expressões Lógicas
 Elas realizam a comparação entre valores e variáveis retornando um valor booleano (verdadeiro ou falso), para se criar uma operação lógica usamos os seguintes operadores:
 ### Operadores relacionais
