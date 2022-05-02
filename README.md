@@ -20,15 +20,66 @@ Elas realizam a comparação entre valores e variáveis retornando um valor bool
 * Ou (or) ||: retorna verdadeiro caso um dos operandos forem verdadeiros
 * Não (not) !: inverte o valor do operando
 ---
+## Processo de Repetição
+Quando é necessário repetir o mesmo trecho de código podemos utilizar estruturas de repetição.
+### Comandos de repetição
+* Do-While: executa os comandos dentro do bloco pelo menos duas vezes e segue executando os mesmos 
+caso uma determinada condição for verdadeira.
+>
+>   do {
+>       //Codigo
+>   } while(condicao)
+>
+* While: para se executar os comandos dentro do bloco ele primeiro confere se a condição for verdadeira, caso for ele executa os comandos enquanto a mesma for verdadeira, caso for falsa ele nem executa.
+>
+>   while (condicao) { 
+>       //Codigo
+>   }
+>
+* For: executa a repetição do bloco de códigos de acordo com 3 expressões internas.
+>
+>   for (expressao1;expressao2;expressao3) {
+>       //Codigos
+>   }
+>
+A primeira expressão trata-se da inicialização da variável de controle, já a segunda é a expressão lógica que determina a finalização da repetição e a terceira é responsável por alterar o valor da váriavel de controle.
+* Break: este comando interrompe o comando atual e passa para o próximo, pode ser usado em estruturas condicionais ou de repetição.
+---
+## Processo de Seleção
+Quando é necessário disponibilizar mais de uma opção para a execução do programa podemos utilizar estruturas condicionais.
+### Comandos condicionais
+* IF-ELSE: basicamente define uma ação para ser feita caso uma condição seja verdadeira e uma
+para caso a condição seja falsa.
+>
+>   if (condicao) {
+>       //Código para caso condição ser verdadeira
+>   }
+>   else {
+>       //Código para caso condição ser falsa
+>   }
+>
+* Switch: determina várias possíbilidades de acordo com os possíveis valores de uma variável.
+>
+>   switch (expressao) {
+>       case valor1:
+>           //Codico1;
+>       break;
+>       ...
+>       default:
+>           //Comando para casos gerais;
+>       break;
+>   }
+>           
+---
 ## Métodos
 1. Estrutura:
-    > public tipo_retorno nome_metodo (parametros...) {
+    >   public tipo_retorno nome_metodo (parametros...) {
     >
-    >   //Código
+    >       //Código
     >
-    >   return retorno;
+    >       return retorno;
     >
-    > }
+    >   }
 2. Parâmetros: métodos de uma determinada classe podem necessitar de elementos de outra classe ou valores externos para executar suas funções, portanto esse método recebe como parâmetro os valores que necessitar.
 3. Retorno: o retono se trata de um valor resultante do processamento de todo o código do método, todo método deve apresentar um valor de retorno (int, double, void e etc), exceto o método constructor.
 ---
