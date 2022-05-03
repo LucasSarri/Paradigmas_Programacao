@@ -1,10 +1,17 @@
 ## Como rodar programa
 1. javac nome_programa.java \\ Quando roda cria o arquivo nome_programa.class
 2. java nome_programa \\ Executa a classe
-* OBS: todos arquivos referentes a um programa devem estar na mesma pasta, deve-se compilar todas as classes e executar somente a classe com método main
+* OBS: todos arquivos referentes a um programa devem estar na mesma pasta, deve-se compilar todas as classes e executar somente a classe com método main.
 ---
 ## Criação de Classes e Arquivos
 O nome do arquivo deve ser o mesmo da classe, considerando que os nomes devem iniciar com uma letra maiúscula e se tiver mais de uma palavra utilizar a notação CamelCase.
+---
+## Encapsulamento
+Omissão de certas características de uma classe como métodos ou atributos, apresentando ao usuário somente características relevantes para o funcionamento do programa.
+Para se aplicar o conceito de encapsulamento podemos usar os modificadores de acesso que podem ser aplicados a métodos, atributos e classes, alterando assim sua visibilidade.
+* Private: permite o acesso apenas dentro da própria classe, objetos derivados dessa classe podem acessar diretamente os atributos.
+* Protected: permite o acesso dentro da classe, de subclasses especializadas e dentro do pacote, classes especializadas herdam características com o modificador protected.
+* Public: permite o acesso das características da classe a todo o programa.
 ---
 ## Expressões Lógicas
 Elas realizam a comparação entre valores e variáveis retornando um valor booleano (verdadeiro ou falso), para se criar uma operação lógica usamos os seguintes operadores:
