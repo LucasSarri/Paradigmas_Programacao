@@ -7,7 +7,7 @@ public class Principal {
         raio = interface_obj.pegaRaio();
         esfera_obj.recebeRaio(raio);
         volume = esfera_obj.calculaVolume();
-        interface_obj.mostraVolume (volume);
+        interface_obj.imprimeVolume (volume);
 
     }
 }

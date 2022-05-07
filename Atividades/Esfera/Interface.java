@@ -3,7 +3,7 @@ import javax.swing.*;
 public class Interface {
     public Interface () {}
 
-    public double pegaRaio () {
+    public double pegaEntrada () {
         String valor;
         double raio;
         valor = JOptionPane.showInputDialog ("Digite o raio: ");
@@ -11,7 +11,7 @@ public class Interface {
         return raio;
     }
 
-    public void mostraVolume (double vVolume) {
+    public void imprimeVolume (double vVolume) {
         System.out.println ("Volume: "+vVolume);
     }
 }

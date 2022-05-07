@@ -1,34 +1,40 @@
 public class Pessoa {
     //Definição de Atributos
-    protected String name;
-    protected double age;
-    protected char sex;
+    protected String nome;
+    protected double nota1, nota2;
     //Definição de métodos
     //Constructor
-    public Pessoa(String vName, double vAge, char vSex){ 
-        name = vName;
-        age = vAge;
-        sex = vSex;
+    public Pessoa(String vNome, double nota1, double nota2){ 
+        nome = vNome; 
+        nota1 = vNota1;
+        nota2 = vNota2;
     }
-    public String getName() {
-        return name;
+    public void recebeNome (String vNome) {
+        nome = vNome;
     }
-    public void setName(String vName) {
-        name = vName;
+    public void recebeNota1 (double vNota1) {
+        if (vNota1 >= 0 && vNota1 <= 10) {
+            nota1 = vNota1;
+        }
+        else {
+            System.out.println ("Nota incorreta");
+        }
     }
-    public double getAge() {
-        return age;
+    public void recebeNota2 (double vNota2) {
+        if (vNota2 >= 0 && vNota2 <= 10) {
+            nota1 = vNota2;
+        }
+        else {
+            System.out.println ("Nota incorreta");
+        }
     }
-    public void setAge(double vAge) {
-        age = vAge;
+    public String informeNome () {
+        return nome;
     }
-    public char getSex() {
-        return sex;
+    public double informeNota1 () {
+        return nota1;
     }
-    public void setSex(char vSex) {
-        sex = vSex;
-    }
-    public void gettingOlder() {
-        idade += 1;
+    public double informeNota2 () {
+        return nota2;
     }
 }
