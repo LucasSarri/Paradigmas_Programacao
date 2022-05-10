@@ -28,5 +28,6 @@ public class Triangulo {
     }
     public double calculaArea () {
         area = (base*altura)/2;
+        return area;
     }
 }
