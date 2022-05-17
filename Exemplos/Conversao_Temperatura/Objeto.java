@@ -1,6 +1,6 @@
 public class Objeto {
-    public double Graus_C;
-    public Objeto (double C) {
-        Graus_C = C;
+    protected double graus_C;
+    public Objeto (double vGraus_C) {
+        graus_C = vGraus_C;
     }
 }

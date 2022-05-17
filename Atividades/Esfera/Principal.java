@@ -4,10 +4,9 @@ public class Principal {
         Interface interface_obj = new Interface ();
         Esfera esfera_obj = new Esfera ();
 
-        raio = interface_obj.pegaRaio();
+        raio = interface_obj.pegaEntrada();
         esfera_obj.recebeRaio(raio);
         volume = esfera_obj.calculaVolume();
         interface_obj.imprimeVolume (volume);
-
     }
 }
