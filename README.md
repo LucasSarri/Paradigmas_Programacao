@@ -96,3 +96,18 @@ Para se solicitar um serviço deve-se importar a classe e chamar seus métodos n
     >   ponto.setXY(5.0,6.0)
     >
 Neste exemplo foi utilizado o método setXY da classe ponto, onde são passados 5 e 6 como argumentos, onde o 5 representa o x e o 6 o y por causa da ordem definida na declaração da classe.
+---
+## Palavra-chave Super
+O comando super ativa o construtor da superclasse (classe ancestral) dentro da subclasse.
+Em Java, todo construtor deve ter o método construtor da superclasse usando super, caso não tiver essa chamada o Java executa o construtor padrão. Existe 2 maneiras de usar o comando:
+super();
+super(parâmetros);
+Exemplos:
+Construtor(int vA) {
+    a = vA;
+}
+Construtor () {}
+---
+## Mecanismo de Herança
+Possibilita a especialização, característica de POO pois possibilita a reutilização de código.
+Exemplo: Aluno (subclasse) é um tipo de Pessoa (superclasse), a classe Aluno herda as características de Pessoa, portanto não precisa reescrever o código de Pessoa, apenas as características específicas da classe Aluno
