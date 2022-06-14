@@ -4,7 +4,26 @@
 * OBS: todos arquivos referentes a um programa devem estar na mesma pasta, deve-se compilar todas as classes e executar somente a classe com método main.
 ---
 ## Criação de Classes e Arquivos
-O nome do arquivo deve ser o mesmo da classe, considerando que os nomes devem iniciar com uma letra maiúscula e se tiver mais de uma palavra utilizar a notação CamelCase.
+O nome do arquivo deve ser o mesmo da classe, considerando que os nomes devem iniciar com uma letra maiúscula e se tiver mais de uma palavra utilizar a notação CamelCase. Declaração:
+
+encapsulamento class NomeClasse {
+    //Declaração de atibutos
+    public int numero;
+    ...
+    //Declaração de Construtor
+    public NomeClasse (argumentos) {
+        // Comandos
+    }
+    //Declaração de métodos
+    public int metodoQualquer (argumentos) {
+        //Comandos
+        return algumaCoisa;
+    }
+}
+
+Instanciação:
+
+NomeClasse objetoClasse = new NomeClasse (argumentos do construtor);
 ---
 ## Encapsulamento
 Omissão de certas características de uma classe como métodos ou atributos, apresentando ao usuário somente características relevantes para o funcionamento do programa.

@@ -1,12 +1,39 @@
 public class Funcionario extends Pessoa {
     protected String matricula;
     protected double gratProd, salBase;
-    protected int nd;
+    protected int numDep;
 
-    public Funcionario (String vNome, String vMat, double vSalBase, double vGratProd, int vND) {
-        super(vNome,'*',0);
+    public Funcionario (String vNome, int vIdade, String vMat, double vSalBase, double vGratProd, int vND) {
+        super(vNome,vIdade);
         matricula = vMat;
-        if (vSalBase < 0) {
+
+        if (vSalBase < 0.0) {
+            salBase = 0.0;
+        }
+        else{
+            salBase = vSalBase;
+        }
+
+        if (vGratProd < 0.0) {
+            gratProd = 0.0;
+        }
+        else{
+            gratProd = vGratProd;
+        }
+
+        numDep = vND;
+    }
+
+    public void recebeMatricula (String vMat) {
+        matricula = vMat;
+    }
+
+    public String informeMatricula () {
+        return matricula;
+    }
+
+    public void informeSalBase (double vSalBase) {
+        if (vSalBase < 0.0) {
             salBase = 0.0;
         }
         else{
@@ -14,8 +41,21 @@ public class Funcionario extends Pessoa {
         }
     }
 
-    public String informeMatricula () {
-        return matricula;
+    public double recebeSalBase () {
+        return salBase;
+    }
+
+    public void recebeGratProd (double vGratProd) {
+        if (vGratProd < 0.0) {
+            gratProd = 0.0;
+        }
+        else{
+            gratProd = vGratProd;
+        }
+    }
+
+    public double informeGratProd () {
+        return gratProd;
     }
 
     public double forneceSalarioBruto () {
