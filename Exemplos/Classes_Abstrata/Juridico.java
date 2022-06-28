@@ -1,5 +1,3 @@
-import javax.lang.model.element.VariableElement;
-
 public class Juridico extends Contribuinte{
     protected String cnpj;
     protected double gastosPessoal, gastosEqui;
