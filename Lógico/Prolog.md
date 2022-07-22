@@ -1,0 +1,3 @@
+## Prolog
+    Uma linguagem descritiva e prescritiva, diferente de POO um objeto é uma coisa que queremos raciocinar.
+    Programação em Prolog: Fatos, Regras e Perguntas, Fatos: constatação sobre algum objeto, Fatos: Constatação sobre algum objeto, Regras: informações derivadas de outras (Regras de inferência e lógica matemática), Pergunta: determina se um conjunto de fatos pertence do banco de dados e Fatos: relações e objetos, Relação (objeto1, objeto).
