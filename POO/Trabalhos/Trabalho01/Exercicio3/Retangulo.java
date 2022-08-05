@@ -2,10 +2,10 @@ public class Retangulo {
     protected Ponto ponto1, ponto2, ponto3, ponto4;
 
     public Retangulo (Ponto p1, Ponto p2, Ponto p3, Ponto p4) {
-        ponto1 = p1;
-        ponto2 = p2;
-        ponto3 = p3;
-        ponto4 = p4;
+        ponto1 = p1; //Superior Esquerdo
+        ponto2 = p2; //Inferior Direito
+        ponto3 = p3; //Inferior Esquerdo
+        ponto4 = p4; //Superior Direito
     }
 
     public void recebaRetangulo (Ponto p1, Ponto p2, Ponto p3, Ponto p4) {
@@ -43,6 +43,22 @@ public class Retangulo {
         diagonal = (altura * altura) + (base*base);
 
         return Math.sqrt(diagonal);
+    }
+
+    public boolean pontoInterno (Ponto p) {
+        // Verificando limites superiores e inferiores
+        if (p.y <= p1.y && p.y >= p3.y) {
+            //Verificando limites direito e esquerdo
+            if (p.x >= p3.x && p.x <= p2.x) {
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else {
+            return false;
+        }
     }
 
     public boolean informeLadosIguais () {
