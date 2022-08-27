@@ -1,16 +1,10 @@
 public class Principal {
-    public static void main (String[] args) {
-        Interface interface_obj;
+    public static void main (String[]args) {
+        Interface int_obj = new Interface ();
+        Ponto p1 = int_obj.construaPonto();
+        Ponto p2 = int_obj.construaPonto();
+        Retangulo ret = new Retangulo(p1,p2);
+        int_obj.menu(ret);
 
-        interface_obj = new Interface();
-
-        Ponto p1 = interface_obj.construaPonto();
-        Ponto p2 = 
-        Ponto p3 = 
-        Ponto p4 = 
-
-        pa.setXY(8.0, 9.0);
-        double distancia = pa.calculaDistancia(pc);
-        System.out.println(distancia);
     }
 }

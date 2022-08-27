@@ -1,79 +1,51 @@
 public class Retangulo {
-    protected Ponto ponto1, ponto2, ponto3, ponto4;
+    private Ponto p1;
+    private Ponto p2;
 
-    public Retangulo (Ponto p1, Ponto p2, Ponto p3, Ponto p4) {
-        ponto1 = p1; //Superior Esquerdo
-        ponto2 = p2; //Inferior Direito
-        ponto3 = p3; //Inferior Esquerdo
-        ponto4 = p4; //Superior Direito
+    public Retangulo (Ponto ponto1, Ponto ponto2) {
+        p1 = ponto1;
+        p2 = ponto2;
     }
-
-    public void recebaRetangulo (Ponto p1, Ponto p2, Ponto p3, Ponto p4) {
-        ponto1 = p1;
-        ponto2 = p2;
-        ponto3 = p3;
-        ponto4 = p4;
+    public Retangulo () {
+        p1 = new Ponto (0,0);
+        p2 = new Ponto (0, 0);
+    } 
+    public void criarRetangulo (Ponto ponto1, Ponto ponto2) {
+        p1 = ponto1;
+        p2 = ponto2;
     }
-
-    public int informePerimetro () {
-        int base, altura, perimetro;
-
-        base = p3.calculaDistancia(p2);
-        altura = p1.calculaDistancia(p3);
-        perimetro = 2 * (base + altura);
-
-        return perimetro;
+    public double calculaPerimetro () {
+        double base = p2.x - p1.x;
+        double altura = p1.y - p2.y;
+        return 2*base + 2*altura;
     }
-
-    public int informeArea () {
-        int base, altura, area;
-
-        base = p3.calculaDistancia(p2);
-        altura = p1.calculaDistancia(p3);
-        area = base * altura;
-
-        return area;
+    public double calculaArea () {
+        double base = p2.x - p1.x;
+        double altura = p1.y - p2.y;
+        return base*altura;
     }
-
-    public double informeDiagonal () {
-        int base, altura, diagonal;
-
-        base = p3.calculaDistancia(p2);
-        altura = p1.calculaDistancia(p3);
-        diagonal = (altura * altura) + (base*base);
-
-        return Math.sqrt(diagonal);
+    public double calculaDiagonal () {
+        double base = p2.x - p1.x;
+        double altura = p1.y - p2.y;
+        double soma = base*base + altura*altura;
+        return Math.sqrt(soma);
     }
-
-    public boolean pontoInterno (Ponto p) {
-        // Verificando limites superiores e inferiores
-        if (p.y <= p1.y && p.y >= p3.y) {
-            //Verificando limites direito e esquerdo
-            if (p.x >= p3.x && p.x <= p2.x) {
-                return true;
-            }
-            else{
-                return false;
+    public boolean pontoDentro (Ponto p3) {
+        boolean dentro = false;
+        if (p3.y <= p2.y && p3.y >= p1.y) {
+            if (p3.x >= p1.x && p3.x <= p2.x) {
+                dentro = true;
             }
         }
-        else {
-            return false;
-        }
+        return dentro;
     }
-
-    public boolean informeLadosIguais () {
-        int a,b,c,d;
-
-        a = p1.calculaDistancia(p4);
-        b = p1.calculaDistancia(p3);
-        c = p3.calculaDistancia(p2);
-        d = p4.calculaDistancia(p2);
-
-        if ((a == b) && (c == d) && (a == c)) {
-            return true;
+    public boolean ladosIguais () {
+        double base = p2.x - p1.x;
+        double altura = p1.y - p2.y;
+        boolean iguais = false;
+        if (base == altura) {
+            iguais = true;
         }
-        else {
-            return false;
-        }
+        return iguais;
     }
 }
